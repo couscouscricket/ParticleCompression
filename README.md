@@ -1,0 +1,2 @@
+# ParticleCompression
+Lubachevsky–Stillinger algorithm
