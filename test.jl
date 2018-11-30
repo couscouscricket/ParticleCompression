@@ -3,6 +3,7 @@ include("./event.jl")
 include("./priorityQueue.jl")
 include("./box.jl")
 
+# Density inside a unit box.
 function getPackingFraction(box::Box)
     areaParticles::Float64 = 0
     for p in box.particles
