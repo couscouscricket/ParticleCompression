@@ -1,2 +1,2 @@
-# ParticleCompression
+# Particle Compression
 Lubachevsky–Stillinger algorithm
