@@ -16,6 +16,7 @@ function plotBox(box::Box, growthRate)
     phi::Float64 = getPackingFraction(box)
     gp = open(`gnuplot -p`, "w")
     println(gp, "
+            set terminal qt font 'Helvetica,11';
             set colorsequence podo; unset colorbox;
             set style fill solid 0.5 border 1;
             set grid back lc 1 lw 2;
@@ -34,7 +35,6 @@ function plotBox(box::Box, growthRate)
     end
     println(gp, "e")
     close(gp)
-    wait(gp.closenotify)
 end
 
 function test()
